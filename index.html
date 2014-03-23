@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<body background="http://i.imgur.com/j0CZCW3.jpg">
+	<head>
+		<title>GravityTheGame</title>
+		<style type="text/css">
+		</style>
+		<script>
+		var clooneys = 4;
+		function clooney() {
+			clooneys -= 1;
+			if(clooneys == 0) {
+				//aPPEND
+				alert("Clooney'd");
+				alert("BOSS BOTTLE");
+				document.body.innerHTML += '<marquee behavior="scroll" scrollamount="10" height="600"><img src="http://i.imgur.com/a2dVuca.png" width="760" height="700" alt="Buzzy bee" onclick=\'this.style.display="none"; alert("YOU WIN... OR DO YOU??");\'/></marquee>"';
+			}
+		}
+		</script>
+		<!--<script src="jquery-2.1.0.js"></script>
+	<script src="jquery.marquee.min.js"></script>/-->
+	</head>
+	<style><!--
+BODY{
+cursor: url('http://i.imgur.com/nVXd6UM.gif'), default }
+-->
+</style>
+
+	<body>
+		
+	
+	<!--<script>
+		$(function () {
+    		$('.marquee').marquee({
+        		duration: 5
+    		});
+		});
+		</script>
+
+		<div class='marquee'><img src="http://i.imgur.com/UtpxieR.png" width="90" height="125" onclick="this.style.display='none';" alt="Buzzy bee" /></div>/-->
+		
+
+
+		<marquee behavior="alternate" scrollamount="10"><div class="marq"><img src="http://i.imgur.com/UtpxieR.png" width="90" height="125" onclick="this.style.display='none'; clooney();" alt="Buzzy bee" /></div></marquee>
+
+
+		<marquee behavior="alternate" scrollamount="30"><img src="http://i.imgur.com/UtpxieR.png" width="90" height="125" alt="Buzzy bee" onclick="this.style.display='none'; clooney();"/></marquee>
+
+		<marquee behavior="alternate" scrollamount="10"><img src="http://i.imgur.com/UtpxieR.png" width="90" height="125" alt="Buzzy bee" onclick="this.style.display='none'; clooney();"/></marquee>
+
+		<marquee behavior="alternate" scrollamount="45"><img src="http://i.imgur.com/UtpxieR.png" width="90" height="125" alt="Buzzy bee" onclick="this.style.display='none'; clooney();"/></marquee>
+
+		
+
+	</body>
+</html>
